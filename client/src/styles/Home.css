@@ -1,0 +1,125 @@
+.title1 {
+  color: white;
+  font-size:60px;
+  margin-left: 80px;
+  margin-top: 0px;
+  margin-bottom: 0px;  
+ }
+
+.home {
+  background-color: #0b090a; 
+}
+
+.head{
+  background-color: #0b090a;
+  height: 100px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  box-sizing: content-box;
+}
+
+.created_dog {
+  width: 300px;
+  height: 100px;
+}
+
+.crea {
+  margin-top: 30px;
+  margin-bottom: 0px;
+  /* position: relative; */
+  width: 150px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.crea:hover {
+  transform: scale(1.1);
+}
+
+
+.b2 {
+  background: white;
+  color: black;
+  /* display: inline-block; */
+  font: normal bold 25px/1 "Ubuntu", sans-serif;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  border: #0b090a;
+  line-height: 30px;
+  font-weight: bolder;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.load {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.search {
+  margin: 10px;
+}
+
+.navig {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pagin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  background: white;
+  color: black;
+  /* display: inline-block; */
+  font: normal bold 20px/1 "Ubuntu", sans-serif;
+  text-align: center;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  border: #0b090a;
+  line-height: 30px;
+  font-weight: bolder;
+  border-radius: 15px;
+}
+
+.about:hover {
+  transform: scale(1.1);
+}
+
+
+.ref {
+  background: white;
+  padding: 10px 2px;
+  color: black;
+  /* display: inline-block; */
+  font: normal bold 20px/1 "Ubuntu", sans-serif;
+  text-align: center;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  border: #0b090a;
+  line-height: 30px;
+  font-weight: bolder;
+  border-radius: 15px;
+  
+}
+
+.ref:hover {
+  transform: scale(1.1);
+}

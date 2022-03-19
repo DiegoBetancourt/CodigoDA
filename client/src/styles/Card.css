@@ -1,0 +1,38 @@
+
+.card {
+  margin: 15px;  
+  border-radius: 20px;
+  background-color: #495057;
+  cursor: pointer;
+  height: 390px;
+  width: 340px;
+  display: inline-block;
+  box-shadow: 3px 3px 3px #e9ecef;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 3px ;
+    }
+
+h2 {
+  font-size: larger;
+  margin-top: 2px;
+}
+
+.images{
+  border-radius: 20px;
+  width: 340px;
+  
+  
+}
+
+.temwei {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+p {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}

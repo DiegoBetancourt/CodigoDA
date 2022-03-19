@@ -1,0 +1,41 @@
+
+
+.paginate {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+
+.pageItem {
+    border: 2px solid #e9ecef;
+    border-radius: 5px;
+    padding: 1px;
+    background-color: #495057;
+    }
+
+.pageItem:hover {
+    transform: scale(1.1) 5s;
+}
+
+.paginationbot{
+    color: white;
+    font-size: 17px;
+    font-weight: bolder;
+    margin: 0 2px; 
+    cursor: pointer;
+    background-color: #495057;
+    border: 0px;
+    }
+
+.paginationbot:hover {
+    background: #e9ecef;
+    transform: scale(1.1);
+    color: black;
+}    
+
+.paginationbot:active {
+    background: rgba(228, 124, 5);
+    
+}
