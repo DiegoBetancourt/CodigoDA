@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-//accion que permite renderizar todos los perros en Home
+//Esta accion que permite renderizar todos los perros en el Home, aca se conecta el front y el back
 
 export function getDogs(){
     return async function(dispatch){

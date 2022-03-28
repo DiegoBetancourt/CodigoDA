@@ -60,7 +60,7 @@ export default function Home() {
                     <button className='about'>Inicio</button>
                 </Link>
                 <button onClick={e => handleClick(e)}
-                    className='ref'>Refrescar</button>
+                    className='ref'>Cargar todos los Perros</button>
             </div>
             </div>
             <div className='search'>

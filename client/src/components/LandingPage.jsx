@@ -8,7 +8,7 @@ export default function LandingPage (){
             <div className='title2'>
             <h1 className='intro'>Bienvenido a la Dogs App</h1>
             <Link to='/home'>
-                <button className='bot'style={{cursor: 'pointer'}}>Home</button>
+                <button className='bot'style={{cursor: 'pointer'}}>Ingresar</button>
             </Link>
             </div>
         </div>
