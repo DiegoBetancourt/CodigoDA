@@ -41,6 +41,14 @@ export default function Details(){
                             Temperaments: {allDetails[0].temperament}
                         </span></h2>
                     </div>
+                    <div style={{width: '40%', float: 'right'}}>
+                        <h2><span>
+                            origin: {allDetails[0].origin}
+                        </span></h2>
+                    </div>
+                   
+
+
                     <Link to='/home'><button className='botback'>Back</button></Link> 
                 </div>    
                     ) : (

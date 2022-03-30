@@ -17,12 +17,14 @@ export default function Home() {
 
 
     /* Paginado */
-    const [currentPage, setCurrentPage] = useState(1);              //pagina actual
-    const [dogsPerPage] = useState(8);                              //8 perros por página
-    const indexOfLastDog = currentPage * dogsPerPage;               //índice último perro
-    const indexOfFirstDog = indexOfLastDog - dogsPerPage;           //índice primer perro
+    //Defino varios estados locales
+    const [currentPage, setCurrentPage] = useState(1);   //pagina actual, siempre voy arrancar el la primer pagina
+    const [dogsPerPage] = useState(8);     //perros por página
+    const indexOfLastDog = currentPage * dogsPerPage;    
+    const indexOfFirstDog = indexOfLastDog - dogsPerPage;   
     const currentDog = allDogs.slice(indexOfFirstDog, indexOfLastDog);  //Perros de la página actual  Pág.1 ---> 0-7
 
+    //Seteo la pagina en el numero de pagina
     const paginate = (pageNumber) => {
         setCurrentPage(pageNumber)
     }

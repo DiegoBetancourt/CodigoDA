@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Card.css';
 
-export default function Card({id, image, name, temperament, weightMin, weightMax}){
+export default function Card({id, image, name, temperament, weightMin, weightMax, origin}){
 
     return(
         <div className='card'>
@@ -13,6 +13,9 @@ export default function Card({id, image, name, temperament, weightMin, weightMax
                 <p>{temperament}</p>
                 <p>{weightMin}</p>
                 <p>{weightMax}</p>
+                <p>{origin}</p>
+
+
             </div>
             </Link>
         </div>

@@ -13,6 +13,7 @@ export function getDogs(){
 }
 
 
+
 //accion que permite renderizar todos los temperamentos en Home
 
 export function listOfTemperaments(){

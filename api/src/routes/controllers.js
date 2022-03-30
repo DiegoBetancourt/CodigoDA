@@ -1,7 +1,9 @@
 const axios = require('axios');
 const { Dog, Temperament } = require('../db.js');
 
-//--------------------------------DB------------------------------------------
+//Funciones Controladoras
+
+// Base de Datos
 
 const getDogsfromDB = async() => {
     try {
@@ -10,7 +12,7 @@ const getDogsfromDB = async() => {
                 model: Temperament,
                 attributes: ['temperament'],
                 through: {
-                    attributes: [],     // Valida que solo traiga los atributos pedidos del modelo Temperament
+                    attributes: [], // Valida que solo traiga los atributos pedidos del modelo Temperament
                 },
             },
         });
@@ -36,7 +38,8 @@ const getDogsfromDB = async() => {
     
 };
 
-//--------------------------------------API-------------------------------------
+
+//API
 
 const getDogsfromApi = async() => {
     const getdataDogsApi = await axios.get('https://api.thedogapi.com/v1/breeds');
@@ -51,13 +54,15 @@ const getDogsfromApi = async() => {
             weightMax: parseInt(d.weight.metric.slice(4).trim()),
             weightMin: parseInt(d.weight.metric.slice(0,2).trim()),
             lifespan: d.life_span,
+            origin: d.origin
+            
         };
     });
-    //console.log(dataDogsApi);
+   
     return dataDogsApi;
 };
 
-//----------------------------Uno toda la info-------------------------------------
+//API + Base de Datos
 
 const getAllDogs = async () => {
     const apiInfoDog = await getDogsfromApi();
@@ -65,7 +70,7 @@ const getAllDogs = async () => {
     const totalDogsAll = dbInfoDog.concat(apiInfoDog);
     return totalDogsAll;
 };
-//console.log(getAllDogs());
+
 module.exports = {
     getDogsfromApi, getAllDogs, getDogsfromDB
 }
